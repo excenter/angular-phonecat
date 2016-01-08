@@ -24,7 +24,7 @@ describe('PhoneCat App', function() {
       var phoneList = element.all(by.repeater('phone in phones'));
       var query = element(by.model('query'));
 
-      expect(phoneList.count()).toBe(20);
+      expect(phoneList.count()).toBe(19);
 
       query.sendKeys('nexus');
       expect(phoneList.count()).toBe(1);
